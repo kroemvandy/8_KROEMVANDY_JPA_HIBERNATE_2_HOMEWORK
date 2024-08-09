@@ -1,0 +1,1 @@
+CREATE DATABASE jpa_homework;
