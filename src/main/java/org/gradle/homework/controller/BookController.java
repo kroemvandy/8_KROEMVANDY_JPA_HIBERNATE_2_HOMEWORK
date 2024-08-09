@@ -89,8 +89,7 @@ public class BookController {
     public ResponseEntity<?> deleteBook(@PathVariable UUID bookId) {
         BookApiResponse<Object> apiResponse = BookApiResponse
                 .builder()
-                .message("Book deleted with ID " + bookId + " sucessfully!")
-                .payload(bookRepository.deleteBook(bookId))
+                .message("Book deleted with ID " + bookId + " successfully!")
                 .status(HttpStatus.OK)
                 .code(200)
                 .localDateTime(LocalDateTime.now())

@@ -55,7 +55,6 @@ public class BookRepository {
         entityManager.merge(book);
         return book;
     }
-    
 
     public Book deleteBook(UUID bookId) {
         Book book = entityManager.find(Book.class, bookId);
